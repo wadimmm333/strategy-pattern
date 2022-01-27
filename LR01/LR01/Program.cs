@@ -1,12 +1,12 @@
-﻿using System;
+﻿using LR01;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AllDucks;
 
 
-namespace LR01
+namespace LR
 {
     class Program
     {
