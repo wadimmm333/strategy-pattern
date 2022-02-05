@@ -11,16 +11,29 @@ namespace Stratedypattern
     {
         static void Main(string[] args)
         {
-            Duck duck1 = new MallardDuck();
-            Duck duck2 = new RedheadDuck();
+            MallardDuck duck1 = new MallardDuck();
+            RedheadDuck duck2 = new RedheadDuck();
+            DecoyDuck duck3 = new DecoyDuck();
+            RubberDuck duck4 = new RubberDuck();
 
-            Duck[] ducks = new Duck[] { duck1, duck2 };
+            Duck[] ducks = new Duck[] { duck1, duck2, duck3, duck4};
 
-            for (int i = 0; i < ducks.Length; i++)
+            foreach (Duck duck in ducks)
             {
-                Console.WriteLine(ducks[i].Display());
-                Console.WriteLine(ducks[i].Swim());
-                Console.WriteLine(ducks[i].Quaсk());
+                Console.WriteLine(duck.Display());
+                Console.WriteLine(duck.Swim());
+
+                if (duck is Quackable)
+                {
+                    Console.WriteLine((duck as Quackable).Quack());
+                }
+
+                if (duck is Flyable)
+                {
+                    Console.WriteLine((duck as Flyable).Fly());
+                }
+
+                Console.WriteLine();
             }
 
             Console.ReadKey();
