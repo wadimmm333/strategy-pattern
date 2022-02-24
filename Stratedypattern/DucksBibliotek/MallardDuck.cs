@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace DucksBibliotek
 {
-    public class MallardDuck : Duck, Flyable
+    public class MallardDuck : Duck
     {
         public override string Display()
         {
             return "Display " + this.GetType();
         }
 
-        public string Fly()
+        public MallardDuck(FlyBehavior Fly, QuackBehavior Quack)
         {
-            return "Fly " + this.GetType();
-        }
-
-        public string Quack()
-        {
-            return "Quack " + this.GetType();
+            FlyBehavior = Fly;
+            QuackBehavior = Quack;
         }
     }
 }

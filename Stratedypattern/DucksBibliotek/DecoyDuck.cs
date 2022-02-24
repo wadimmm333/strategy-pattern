@@ -12,5 +12,11 @@ namespace DucksBibliotek
         {
             return "Display " + this.GetType();
         }
+
+        public DecoyDuck(FlyBehavior Fly, QuackBehavior Quack)
+        {
+            FlyBehavior = Fly;
+            QuackBehavior = Quack;
+        }
     }
 }

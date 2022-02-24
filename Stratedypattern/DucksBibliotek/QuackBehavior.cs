@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DucksBibliotek
 {
-    public interface Flyable
+    public interface QuackBehavior
     {
-        string Fly();
-        
+        string Quack();
+       
     }
 }

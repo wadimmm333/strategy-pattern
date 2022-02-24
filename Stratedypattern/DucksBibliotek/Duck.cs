@@ -10,9 +10,22 @@ namespace DucksBibliotek
     {
         public string Swim()
         {
-            return "Swim " + this.GetType();
+            return "Буль буль буль";
         }
 
         public abstract string Display();
+
+        public FlyBehavior FlyBehavior { private get; set; }
+        public QuackBehavior QuackBehavior { private get; set; }
+
+        public string performFly()
+        {
+            return FlyBehavior.Fly();
+        }
+
+        public string performQuack()
+        {
+            return QuackBehavior.Quack();
+        }
     }
 }
