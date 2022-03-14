@@ -10,7 +10,7 @@ namespace DucksBibliotek
     {
         public override string Display()
         {
-            return "Display " + this.GetType();
+            return "" + this.GetType() + " " + FlyBehavior.GetType() + " " + QuackBehavior.GetType();
         }
 
         public MallardDuck(FlyBehavior Fly, QuackBehavior Quack)

@@ -10,7 +10,7 @@ namespace DucksBibliotek
     {
         public override string Display()
         {
-            return "" + this.GetType() + " " + FlyWithWings.GetType() + " " + DQuack.GetType();
+            return "" + this.GetType() + " " + FlyBehavior.GetType() + " " + QuackBehavior.GetType();
         }
 
         public RubberDuck(FlyBehavior Fly, QuackBehavior Quack)

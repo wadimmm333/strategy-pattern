@@ -15,8 +15,8 @@ namespace DucksBibliotek
 
         public abstract string Display();
 
-        public FlyBehavior flyBehavior { private get; set; }
-        public QuackBehavior QuackBehavior { private get; set; }
+        public FlyBehavior FlyBehavior {  get; set; }
+        protected QuackBehavior QuackBehavior {  get; set; }
 
         public string performFly()
         {
